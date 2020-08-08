@@ -1,5 +1,5 @@
 # first_rust_project
-my first project in rust
+my first project in rust... unless you count "Hello World!"
 
 --THIS PROJECT IS MADE FOLLOWING THE RUST PROGRAMMING LANGUAGE BOOK AS A GUIDE--
 
