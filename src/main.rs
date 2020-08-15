@@ -7,6 +7,7 @@ fn main() {
         .gen_range(1, 101);
 
     let mut res = false;
+    let mut guess_total = 0;
 
     println!("Guess the number!\nPlease input your guess");
 
@@ -25,8 +26,6 @@ fn main() {
             },
         };
 
-        println!("You guessed: {}", guess);
-
         match guess.cmp(&num) {
             Ordering::Less => println!("too low!"),
             Ordering::Equal => {
@@ -34,5 +33,7 @@ fn main() {
                 res = true},
             Ordering::Greater => println!("too high!")
         }
+        guess_total += 1;
     }
+    println!("Total number of guesses: {}", guess_total);
 }
